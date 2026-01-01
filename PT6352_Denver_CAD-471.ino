@@ -61,7 +61,7 @@ void setup() {
   pinMode(fase2, INPUT);
 
   pinMode(BUTTON_PIN2, INPUT_PULLUP);
-  pinMode(BUTTON_PIN3, INPUT);//Here we don't apply Pull Up because the quadrature button have a resistor in each phase of 56k
+  pinMode(BUTTON_PIN3, INPUT);//Here we don't apply Pull Up because the quadrature button have a resistor in each phase of 39k
                               //this will result at divisor of voltage not equilibrated. I apply external pull-up of 220k
 
  attachInterrupt(digitalPinToInterrupt(BUTTON_PIN2),
